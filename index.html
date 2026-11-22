@@ -58,11 +58,16 @@ footer .ig { color: var(--cream); text-decoration: none; border-bottom: 1px soli
   .btn:active { transform: none; }
   .toast, .toast.on { transform: translate(-50%, 0); }
 }
+.back-guide { display:inline-flex; align-items:center; gap:.45em; min-height:44px; margin:0 0 .45em; color:inherit; font:600 .95rem/1.25 system-ui,sans-serif; text-decoration:underline; text-underline-offset:.22em; }
+.back-guide:focus-visible { outline:2px solid currentColor; outline-offset:3px; }
+header:has(.back-guide) { padding-top:12px; }
+footer .back-guide { margin:.4em 0 0; color:inherit; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
+    <a class="back-guide" href="/#rehber-google-araclari"><span aria-hidden="true">←</span> Rehberlere dön</a>
     <div class="kicker">Videodaki 3 araç</div>
     <h1>Google'ın ücretsiz 3 yapay zekâ aracı</h1>
     <p>Her hafta kullandığım üç araç. Üçü de ücretsiz kullanılabiliyor. Her birinin altına ilk denemen için bir öneri bıraktım.</p>
@@ -106,7 +111,8 @@ footer .ig { color: var(--cream); text-decoration: none; border-bottom: 1px soli
       <button class="btn" type="button" id="share">Bu sayfayı gönder</button>
       <a class="btn ghost" href="https://www.instagram.com/itskeremozdemir/">Instagram</a>
     </div>
-  </footer>
+  <a class="back-guide" href="/#rehber-google-araclari"><span aria-hidden="true">←</span> Rehberlere dön</a>
+</footer>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
